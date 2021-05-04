@@ -5,12 +5,7 @@ import Cards from './Cards'
 
 export default function Card() {
     
-    const [clicked, setClicked] = useState(false)
-
-    const handleClick = () => {
-        setClicked(!clicked)
-        console.log("sa")
-    }
+   
 
     return (
         <div>
@@ -19,7 +14,7 @@ export default function Card() {
             <div className="card-div">
 
                 <div className="stripe"></div>
-                <div className="small-card-div" onClick={handleClick}>
+                <div className="small-card-div" >
                 {
                     categories.map((element) => (
                         <Cards name={element.name}
