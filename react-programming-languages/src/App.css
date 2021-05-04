@@ -45,11 +45,22 @@
   margin-top: 20px;
   overflow: hidden;
 }
+
+
+
 .react-image{
   margin-top: 50px;
   width: 250px;
   height: 130px;
 }
+.react-image-reverse{
+  margin-top: 50px;
+  width: 250px;
+  height: 130px;
+  transition: 3s ease all;
+  transform: rotateY(360deg);
+}
+
 .stripe{
   height: 70px;
   width: 650px;
@@ -82,6 +93,7 @@
 .small-card:hover .images{
   width: 80px;
   height: 70px;
+  transition: 0.5s ease all;
 }
 .small-card:hover {
   width: 140px;
@@ -106,9 +118,13 @@
   padding-top: 3px;
 }
 ul{
-  list-style: none;
-  margin-left: -25px;
+  margin-left: -10px;
 }
 li{
-  line-height: 1.3rem;
+  line-height: 1.2rem;
+  font-size: 0.9rem;
+}
+.title{
+  font-family: 'Itim', cursive;
+  font-size: 1.2rem;
 }
